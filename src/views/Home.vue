@@ -6,8 +6,13 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col p-0">
         <ServicesResume />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col p-0">
+        <Location />
       </div>
     </div>
   </div>
@@ -16,8 +21,9 @@
 <script>
 import HomeJumbotron from "@/components/HomeJumbotron.vue";
 import ServicesResume from "@/components/ServicesResume.vue";
+import Location from "@/components/Location.vue";
 export default {
   name: "Home",
-  components: { HomeJumbotron, ServicesResume }
+  components: { HomeJumbotron, ServicesResume, Location }
 };
 </script>
