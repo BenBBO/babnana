@@ -1,29 +1,18 @@
 <template>
   <div class="container-fluid">
-    <div class="row">
-      <div class="col p-0">
-        <HomeJumbotron />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col p-0">
-        <ServicesResume />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col p-0">
-        <Location />
-      </div>
-    </div>
+    <!-- Dernieres nouvelle de la ferme ou évènements à venir => Liens vers le facebook de la ferme ?  -->
+
+    <!-- Présentation   -->
+
+    <p>Créé en 2021, blah blah blah</p>
+
+    <!-- Embed vidéo de la ferme -->
   </div>
 </template>
 
 <script>
-import HomeJumbotron from "@/components/HomeJumbotron.vue";
-import ServicesResume from "@/components/ServicesResume.vue";
-import Location from "@/components/Location.vue";
 export default {
   name: "Home",
-  components: { HomeJumbotron, ServicesResume, Location }
+  components: {},
 };
 </script>

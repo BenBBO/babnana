@@ -40,5 +40,10 @@ export default {
   .card-body {
     text-align: center;
   }
+
+  &.card-deck{
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 </style>

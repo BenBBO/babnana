@@ -2,16 +2,21 @@
   <l-map id="map" :zoom="zoom" :center="center">
     <l-tile-layer :url="url" />
     <l-marker :lat-lng="center" :icon="icon">
-      <l-popup >
-        <div>Nous intervenons dans la région Grenobloise</div>
+      <l-popup>
+        <div class="text-center">
+          <p>
+            <b>Retrouvez Babnana à l'Isle aux chiens</b>
+            <br />
+            <i>route de Bourgoin, 38460 Trept</i>
+          </p>
+        </div>
       </l-popup>
     </l-marker>
-    <l-circle :lat-lng="center" :radius="circle.radius" :color="circle.color" :stroke="false" />
   </l-map>
 </template>
 
 <script>
-import { LMap, LTileLayer, LMarker, LCircle, LPopup } from "vue2-leaflet";
+import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
 import { latLng, icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -21,25 +26,20 @@ export default {
     LMap,
     LTileLayer,
     LMarker,
-    LCircle,
-    LPopup
+    LPopup,
   },
   data() {
     return {
       url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-      center: latLng(45.188529, 5.724524),
+      center: latLng(45.679313, 5.316476),
       zoom: 13,
       icon: icon({
         iconUrl: require("@/assets/babnana.png"),
         iconSize: [100, 54],
-        iconAnchor: [50, 27]
+        iconAnchor: [50, 27],
       }),
-      circle: {
-        radius: 25000,
-        color: "red"
-      }
     };
-  }
+  },
 };
 </script>
 

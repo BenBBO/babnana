@@ -17,18 +17,24 @@
 
       <div class="collapse navbar-collapse" id="navigationContent">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
+          <router-link class="nav-link" class-active="active" to="/"
+            >Acceuil</router-link
+          >
+          <router-link
+            class="nav-link"
+            class-active="active"
+            to="/fermePedagogique"
+            >Ferme pédagogique</router-link
+          >
+          <router-link class="nav-link" class-active="active" to="/animation"
+            >Animation</router-link
+          >
+          <router-link class="nav-link" class-active="active" to="/galerie"
+            >Galerie</router-link
+          >
+          <router-link class="nav-link" class-active="active" to="/aPropos"
+            >A propos</router-link
+          >
         </ul>
       </div>
     </nav>
@@ -42,5 +48,16 @@
 
 #logo {
   width: 50%;
+}
+
+#navigationContent {
+  .nav-link {
+    padding: 1em;
+    &.router-link-exact-active {
+      color: white;
+      background-color: $primary;
+      border-radius: 1em;
+    }
+  }
 }
 </style>
