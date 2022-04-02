@@ -22,3 +22,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+## Inspirations : 
+
+https://ferme-pedagogique.fr/
+https://www.lafermedezoe.com/
