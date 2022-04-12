@@ -23,7 +23,4 @@ export default {
   color: white;
 }
 
-#jumbotron-title{
-  font-family: 'Chilanka';
-}
 </style>

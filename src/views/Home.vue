@@ -73,9 +73,51 @@
 
     <!-- Présentation   -->
 
-    <p>Créé en 2021, blah blah blah</p>
+    <div class="description-container">
+      <h2>Bienvenue chez Babnana</h2>
+      <p>
+        Lorem ipsum dolor sit amet. Nam assumenda atque nam magnam illum ut
+        suscipit nisi sit dolore eveniet ut omnis perspiciatis in sequi eaque.
+        Qui expedita corporis ad enim cumque et alias architecto et saepe
+        ratione et minus architecto sit cumque praesentium est unde dolore?
+      </p>
+      <p>
+        Non ducimus praesentium <em>Sit quia</em> id dolorem galisum est neque
+        dolores. Aut autem consequatur qui error molestiae non nostrum
+        laboriosam sit doloribus ipsum. Cum omnis consequatur quo unde cumque
+        aut dolorem nisi eum iusto dolores sit voluptates corporis sit veniam
+        internos non dignissimos odit.
+      </p>
+      <p>
+        Et excepturi dolor
+        <em
+          >Qui tempora ea temporibus veniam ex iusto dignissimos est soluta
+          error</em
+        >. Ea consequatur voluptas ut corporis laboriosam sed fuga dolorum et
+        illum nobis sit quibusdam possimus et ipsam laborum id quia incidunt? Ut
+        temporibus similique
+        <strong
+          >Et quisquam non voluptas quasi rem nulla incidunt ut quaerat
+          sapiente</strong
+        >
+        vel enim dolores et laborum consequuntur.
+      </p>
 
-    <!-- Embed vidéo de la ferme -->
+      <hr />
+    </div>
+
+    <div class="video-container">
+      <!-- Embed vidéo de la ferme -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/HEJsLxfzPXk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </template>
 
@@ -85,3 +127,26 @@ export default {
   components: {},
 };
 </script>
+<style lang="scss" scoped>
+.description-container {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  text-align: center;
+
+  hr {
+    color: $primary;
+    border-top:2px solid;
+  }
+
+  h2 {
+    margin-bottom: 1em;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.video-container {
+  text-align: center;
+}
+</style>
