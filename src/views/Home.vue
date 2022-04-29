@@ -118,6 +118,37 @@
         allowfullscreen
       ></iframe>
     </div>
+    <div class="presentation-container">
+      <div class="presentation-img">
+        <img :src="require(`@/assets/whoAmI.jpg`)" alt="Qui suis-je?" />
+      </div>
+      <div class="presentation-description">
+        <h2>Qui suis-je</h2>
+        <p>
+          Et modi provident nam nulla cumque
+          <em
+            >Eos temporibus non voluptatem voluptas et repudiandae corporis est
+            necessitatibus dolor</em
+          >. Qui dolorem possimus aut galisum ipsa
+          <strong
+            >Eum maiores sed culpa consectetur eos laboriosam deserunt in
+            adipisci dolores</strong
+          >
+          non aliquam molestias. Et necessitatibus perspiciatis et veritatis
+          culpa aut quidem velit aut illum tempore et repellendus porro.
+        </p>
+        <p>
+          Qui galisum amet eos sapiente saepehic ipsum et natus quasi. Qui
+          expedita excepturi
+          <strong>Et eaque ad enim voluptatibus et officiis veniam</strong> est
+          libero ratione At omnis atque! In laboriosam consequatur
+          <a href="https://www.loremipzum.com" target="_blank">Cum itaque</a> et
+          neque assumenda ut incidunt labore. Eum alias eaque sit odit facere
+          aut deleniti doloribus et aspernatur molestiae et optio minus sed
+          repellat doloremque.
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -135,7 +166,7 @@ export default {
 
   hr {
     color: $primary;
-    border-top:2px solid;
+    border-top: 2px solid;
   }
 
   h2 {
