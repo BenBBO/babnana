@@ -28,3 +28,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 https://ferme-pedagogique.fr/
 https://www.lafermedezoe.com/
+
+## Palette de couleur : 
+
+https://colorpalettes.net/color-palette-4209/
