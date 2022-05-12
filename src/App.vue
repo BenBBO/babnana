@@ -1,6 +1,91 @@
 <template>
   <div id="app">
-    <nav
+    <header>
+      <h1 class="site-heading text-center text-faded d-none d-lg-block">
+        <span class="site-heading-upper text-primary mb-3"
+          >A Free Bootstrap Business Theme</span
+        >
+        <span class="site-heading-lower">Business Casual</span>
+      </h1>
+    </header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <router-link
+          class="navbar-brand text-uppercase fw-bold d-lg-none"
+          to="/"
+        >
+          <img id="logo" alt="Babnana logo" src="./assets/babnana.png" />
+        </router-link>
+        <!-- <a
+          class="navbar-brand text-uppercase fw-bold d-lg-none"
+          href="index.html"
+          >Start Bootstrap</a
+        > -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mt-2 mt-lg-0">
+            <li class="nav-item px-lg-4">
+              <router-link class="nav-link" class-active="active" to="/"
+                >Acceuil</router-link
+              >
+            </li>
+            <li class="nav-item px-lg-4">
+              <router-link
+                class="nav-link"
+                class-active="active"
+                to="/fermePedagogique"
+                >Ferme pédagogique</router-link
+              >
+            </li>
+            <li class="nav-item px-lg-4">
+              <router-link
+                class="nav-link"
+                class-active="active"
+                to="/animation"
+                >Animation</router-link
+              >
+            </li>
+            <li class="nav-item px-lg-4">
+              <router-link class="nav-link" class-active="active" to="/galerie"
+                >Galerie</router-link
+              >
+            </li>
+            <li class="nav-item px-lg-4">
+              <router-link class="nav-link" class-active="active" to="/aPropos"
+                >A propos</router-link
+              >
+            </li>
+            <!-- <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase" href="about.html">About</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase" href="products.html"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase" href="store.html">Store</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <nav
       class="navbar sticky-top navbar-expand-lg navbar-light bg-light"
       :class="{ 'navbar--collapsed': !showNavbar }"
     >
@@ -48,7 +133,7 @@
           ></a>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <router-view />
   </div>
 </template>
@@ -87,11 +172,12 @@ export default {
 
 <style lang="scss">
 @import "./assets/styles/custom.scss";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./assets/styles/styles.css";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
 body {
-  font-family: 'Tajawal', sans-serif;
+  font-family: "Tajawal", sans-serif;
   background-color: $background;
 }
 
@@ -100,35 +186,35 @@ body {
   transition: width 1s;
 }
 
-#navigationContent {
-  .nav-link {
-    padding: 1em;
-    &.router-link-exact-active {
-      color: white;
-      background-color: $primary;
-      border-radius: 1em;
-      transition: border-radius 1s;
-    }
-  }
-}
+// #navigationContent {
+//   .nav-link {
+//     padding: 1em;
+//     &.router-link-exact-active {
+//       color: white;
+//       background-color: $primary;
+//       border-radius: 1em;
+//       transition: border-radius 1s;
+//     }
+//   }
+// }
 
-.social-nav {
-  font-size: 2em;
-}
+// .social-nav {
+//   font-size: 2em;
+// }
 
-.navbar.navbar--collapsed {
-  .navbar-brand {
-    padding-top: 0;
-    padding-bottom: 0;
-    #logo {
-      width: 25%;
-    }
-  }
-  padding-top: 0px;
-  padding-bottom: 0px;
+// .navbar.navbar--collapsed {
+//   .navbar-brand {
+//     padding-top: 0;
+//     padding-bottom: 0;
+//     #logo {
+//       width: 25%;
+//     }
+//   }
+//   padding-top: 0px;
+//   padding-bottom: 0px;
 
-  #navigationContent .nav-link.router-link-exact-active {
-    border-radius: initial;
-  }
-}
+//   #navigationContent .nav-link.router-link-exact-active {
+//     border-radius: initial;
+//   }
+// }
 </style>

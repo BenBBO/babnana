@@ -119,9 +119,6 @@
       ></iframe>
     </div>
     <div class="presentation-container">
-      <div class="presentation-img">
-        <img :src="require(`@/assets/whoAmI.jpg`)" alt="Qui suis-je?" />
-      </div>
       <div class="presentation-description">
         <h2>Qui suis-je</h2>
         <p>
@@ -147,6 +144,9 @@
           aut deleniti doloribus et aspernatur molestiae et optio minus sed
           repellat doloremque.
         </p>
+      </div>
+      <div class="presentation-img">
+        <img :src="require(`@/assets/whoAmI.jpg`)" alt="Qui suis-je?" />
       </div>
     </div>
   </div>
