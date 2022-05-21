@@ -32,3 +32,4 @@ https://www.lafermedezoe.com/
 ## Palette de couleur : 
 
 https://colorpalettes.net/color-palette-4209/
+https://colorpalettes.net/color-palette-2395/

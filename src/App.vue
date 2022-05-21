@@ -5,7 +5,7 @@
         <span class="site-heading-upper text-primary mb-3"
           >A Free Bootstrap Business Theme</span
         >
-        <span class="site-heading-lower">Business Casual</span>
+        <img>
       </h1>
     </header>
     <!-- Navigation-->
@@ -15,13 +15,8 @@
           class="navbar-brand text-uppercase fw-bold d-lg-none"
           to="/"
         >
-          <img id="logo" alt="Babnana logo" src="./assets/babnana.png" />
-        </router-link>
-        <!-- <a
-          class="navbar-brand text-uppercase fw-bold d-lg-none"
-          href="index.html"
-          >Start Bootstrap</a
-        > -->
+          <img id="logo" alt="Babnana logo" :src="require(`@/assets/babnana.png`)" />
+        </router-link>        
         <button
           class="navbar-toggler"
           type="button"
@@ -44,16 +39,16 @@
               <router-link
                 class="nav-link"
                 class-active="active"
-                to="/fermePedagogique"
-                >Ferme pédagogique</router-link
+                to="/animation"
+                >Animation</router-link
               >
             </li>
             <li class="nav-item px-lg-4">
               <router-link
                 class="nav-link"
                 class-active="active"
-                to="/animation"
-                >Animation</router-link
+                to="/fermePedagogique"
+                >Ferme pédagogique</router-link
               >
             </li>
             <li class="nav-item px-lg-4">
@@ -184,6 +179,12 @@ body {
 #logo {
   width: 50%;
   transition: width 1s;
+}
+
+#mainNav {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
 }
 
 // #navigationContent {
