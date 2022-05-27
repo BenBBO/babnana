@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-    <header>
+    <!-- <header>
       <h1 class="site-heading text-center text-faded d-none d-lg-block">
         <span class="site-heading-upper text-primary mb-3"
           >A Free Bootstrap Business Theme</span
         >
-        <img>
+        <img />
       </h1>
-    </header>
+    </header> -->
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark py-lg-4"
+      id="mainNav"
+    >
       <div class="container">
-        <router-link
+        <!-- <router-link
           class="navbar-brand text-uppercase fw-bold d-lg-none"
           to="/"
         >
-          <img id="logo" alt="Babnana logo" :src="require(`@/assets/babnana.png`)" />
-        </router-link>        
+          <img
+            id="logo"
+            alt="Babnana logo"
+            :src="require(`@/assets/babnana.png`)"
+          />
+        </router-link> -->
         <button
           class="navbar-toggler"
           type="button"
@@ -28,7 +35,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav mt-2 mt-lg-0">
             <li class="nav-item px-lg-4">
               <router-link class="nav-link" class-active="active" to="/"
@@ -61,6 +71,7 @@
                 >A propos</router-link
               >
             </li>
+
             <!-- <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase" href="index.html">Home</a>
             </li>
@@ -76,6 +87,14 @@
               <a class="nav-link text-uppercase" href="store.html">Store</a>
             </li> -->
           </ul>
+          <div class="navbar-nav ml-lg-auto social-nav">
+            <a
+              class="nav-item"
+              href="https://www.facebook.com/Babnana38/"
+              target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </div>
         </div>
       </div>
     </nav>
@@ -171,51 +190,38 @@ export default {
 @import "./assets/styles/styles.css";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 
-body {
+body#appBody {
   font-family: "Tajawal", sans-serif;
-  background-color: $background;
+  background-color: $primary;
+
+  #mainNav {
+    background-color: $primary;
+
+    #navbarSupportedContent {
+      .nav-link {
+        padding: 1em;
+        &.router-link-exact-active {
+          color: black;
+          background-color: $secondary;
+          border-radius: 1em;
+          transition: border-radius 1s;
+        }
+      }
+
+      .social-nav {
+        font-size: 2em;
+      }
+    }    
+  }
+
+  .page-section{
+    margin: 0;
+    padding : 2em;
+  }
 }
 
 #logo {
   width: 50%;
   transition: width 1s;
 }
-
-#mainNav {
-  position: sticky;
-  top: 0;
-  z-index: 10000;
-}
-
-// #navigationContent {
-//   .nav-link {
-//     padding: 1em;
-//     &.router-link-exact-active {
-//       color: white;
-//       background-color: $primary;
-//       border-radius: 1em;
-//       transition: border-radius 1s;
-//     }
-//   }
-// }
-
-// .social-nav {
-//   font-size: 2em;
-// }
-
-// .navbar.navbar--collapsed {
-//   .navbar-brand {
-//     padding-top: 0;
-//     padding-bottom: 0;
-//     #logo {
-//       width: 25%;
-//     }
-//   }
-//   padding-top: 0px;
-//   padding-bottom: 0px;
-
-//   #navigationContent .nav-link.router-link-exact-active {
-//     border-radius: initial;
-//   }
-// }
 </style>

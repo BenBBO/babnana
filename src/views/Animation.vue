@@ -197,9 +197,9 @@
               <p class="mb-0">
                 <span class="product-description">
                   Animation de découverte de la nature avec des balades animées
-                  dans des lieux sauvages. Les lieux sont à découvrire
+                  dans des lieux sauvages. Les lieux sont à découvrire sur Facebook: 
                   <a href="https://www.facebook.com/Babnana38/" target="_blank"
-                    >sur Facebook: Babnana38</a
+                    >Babnana38</a
                   >
                 </span>
                 <br />

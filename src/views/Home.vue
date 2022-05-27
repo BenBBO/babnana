@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="page-section clearfix">
+    <section class="page-section section-about clearfix">
       <div class="container">
         <div class="intro">
           <img
@@ -14,7 +14,7 @@
               <span class="section-heading-lower">Babnana</span>
             </h2>
             <p class="mb-3">
-              Animations pour enfants autour de TREPT               
+              Animations pour enfants autour de <strong>TREPT</strong>
             </p>
             <p class="mb-3">
               <ul class="animation-list">
@@ -31,7 +31,7 @@
         </div>
       </div>
     </section>
-    <section class="page-section cta">
+    <section class="page-section section-video cta">
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
@@ -65,6 +65,14 @@ export default {
 <style lang="scss" scoped>
   .animation-list{
     list-style-type: none;    
+  }
+
+  .section-about{
+    background-color: $light;
+  }
+
+  .section-video{
+    background-color: $third;
   }
 
 
