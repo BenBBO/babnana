@@ -1,161 +1,193 @@
 <template>
   <div>
-    <!-- Nos animaux  -->
+    <section class="page-section about-heading">
+      <div class="container">
+        <img
+          class="img-fluid rounded about-heading-img mb-3 mb-lg-0"
+          :src="require(`@/assets/img/ferme_pedagogique.webp`)"
+          alt="..."
+        />
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <h2 class="section-heading mb-4">
+                  <span class="section-heading-upper"
+                    >La ferme pédagogique</span
+                  >
+                  <span class="section-heading-lower">Le trésor de l'Isle</span>
+                </h2>
+                <p>
+                  Founded in 1987 by the Hernandez brothers, our establishment
+                  has been serving up rich coffee sourced from artisan farmers
+                  in various regions of South and Central America. We are
+                  dedicated to travelling the world, finding the best coffee,
+                  and bringing back to you here in our cafe.
+                </p>
+                <p class="mb-0">
+                  We guarantee that you will fall in
+                  <em>lust</em>
+                  with our decadent blends the moment you walk inside until you
+                  finish your last sip. Join us for your daily routine, an
+                  outing with friends, or simply just to enjoy some alone time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    Voici poupou, loulou, riri et toto
-
-    <!-- Plan de la ferme -->
-    Plan dessiné
-
-    <ul class="cards">
-      <li>
-        <a href="" class="card">
-          <img            
-            :src="require(`@/assets/img/chevraux.jpg`)"
-            class="card__image"
-            alt=""
-          />
-          <div class="card__overlay">
-            <div class="card__header">
-              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                <path />
-              </svg>
-              <img
-                class="card__thumb"
-                :src="require(`@/assets/img/icon-tyto.jpg`)"
-                alt=""
-              />
-              <div class="card__header-text">
-                <h3 class="card__title">Tchoupi, Tagada & Tyto</h3>
-                <span class="card__status">Les mascottes</span>
+    <h1>Les animaux</h1>
+    <section class="page-section">
+      <ul class="cards">
+        <li>
+          <a href="" class="card">
+            <img
+              :src="require(`@/assets/img/chevraux.jpg`)"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                  <path />
+                </svg>
+                <img
+                  class="card__thumb"
+                  :src="require(`@/assets/img/icon-tyto.jpg`)"
+                  alt=""
+                />
+                <div class="card__header-text">
+                  <h3 class="card__title">Tchoupi, Tagada & Tyto</h3>
+                  <span class="card__status">Les mascottes</span>
+                </div>
               </div>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, blanditiis?
+              </p>
             </div>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, blanditiis?
-            </p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="" class="card">
-          <img
-            :src="require(`@/assets/img/ponpon.jpg`)"
-            class="card__image"
-            alt=""
-          />
-          <div class="card__overlay">
-            <div class="card__header">
-              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                <path />
-              </svg>
-              <img
-                class="card__thumb"
-                :src="require(`@/assets/img/icon-ponpon.jpg`)"
-                alt=""
-              />
-              <div class="card__header-text">
-                <h3 class="card__title">Apollon</h3>
-                <span class="card__status">Père peinard</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img
+              :src="require(`@/assets/img/ponpon.jpg`)"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                  <path />
+                </svg>
+                <img
+                  class="card__thumb"
+                  :src="require(`@/assets/img/icon-ponpon.jpg`)"
+                  alt=""
+                />
+                <div class="card__header-text">
+                  <h3 class="card__title">Apollon</h3>
+                  <span class="card__status">Père peinard</span>
+                </div>
               </div>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, blanditiis?
+              </p>
             </div>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, blanditiis?
-            </p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="" class="card">
-          <img
-            :src="require(`@/assets/img/rasta-rocket.jpg`)"
-            class="card__image"
-            alt=""
-          />
-          <div class="card__overlay">
-            <div class="card__header">
-              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                <path />
-              </svg>
-              <img
-                class="card__thumb"
-                src="https://i.imgur.com/7D7I6dI.png"
-                alt=""
-              />
-              <div class="card__header-text">
-                <h3 class="card__title">Rasta & Rockett</h3>
-                <span class="card__status"
-                  >Peace and Love</span
-                >                
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img
+              :src="require(`@/assets/img/rasta-rocket.jpg`)"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                  <path />
+                </svg>
+                <img
+                  class="card__thumb"
+                  src="https://i.imgur.com/7D7I6dI.png"
+                  alt=""
+                />
+                <div class="card__header-text">
+                  <h3 class="card__title">Rasta & Rockett</h3>
+                  <span class="card__status">Peace and Love</span>
+                </div>
               </div>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, blanditiis?
+              </p>
             </div>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, blanditiis?
-            </p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="" class="card">
-          <img
-            :src="require(`@/assets/img/canards.jpg`)"
-            class="card__image"
-            alt=""
-          />
-          <div class="card__overlay">
-            <div class="card__header">
-              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                <path />
-              </svg>
-              <img
-                class="card__thumb"
-                :src="require(`@/assets/img/icon-poussin.jpg`)"
-                alt=""
-              />
-              <div class="card__header-text">
-                <h3 class="card__title">Les canards</h3>
-                <span class="card__status">Et leurs petits</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img
+              :src="require(`@/assets/img/canards.jpg`)"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                  <path />
+                </svg>
+                <img
+                  class="card__thumb"
+                  :src="require(`@/assets/img/icon-poussin.jpg`)"
+                  alt=""
+                />
+                <div class="card__header-text">
+                  <h3 class="card__title">Les canards</h3>
+                  <span class="card__status">Et leurs petits</span>
+                </div>
               </div>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, blanditiis?
+              </p>
             </div>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, blanditiis?
-            </p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="" class="card">
-          <img
-            :src="require(`@/assets/img/rongeurs.jpg`)"
-            class="card__image"
-            alt=""
-          />
-          <div class="card__overlay">
-            <div class="card__header">
-              <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
-                <path />
-              </svg>
-              <img
-                class="card__thumb"
-                :src="require(`@/assets/img/icon-poussin.jpg`)"
-                alt=""
-              />
-              <div class="card__header-text">
-                <h3 class="card__title">Les lapinous</h3>
-                <span class="card__status">3 hours ago</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="card">
+            <img
+              :src="require(`@/assets/img/rongeurs.jpg`)"
+              class="card__image"
+              alt=""
+            />
+            <div class="card__overlay">
+              <div class="card__header">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                  <path />
+                </svg>
+                <img
+                  class="card__thumb"
+                  :src="require(`@/assets/img/icon-poussin.jpg`)"
+                  alt=""
+                />
+                <div class="card__header-text">
+                  <h3 class="card__title">Les lapinous</h3>
+                  <span class="card__status">3 hours ago</span>
+                </div>
               </div>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores, blanditiis?
+              </p>
             </div>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, blanditiis?
-            </p>
-          </div>
-        </a>
-      </li>
-    </ul>
+          </a>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
@@ -185,7 +217,7 @@ $curve: 40;
   border-radius: calc($curve * 1px);
   overflow: hidden;
   text-decoration: none;
-  border:none;
+  border: none;
 }
 
 .card__image {
