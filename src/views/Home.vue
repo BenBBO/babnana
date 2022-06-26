@@ -19,7 +19,7 @@
             <p class="mb-3">
               <ul class="animation-list">
                 <li> Graine de malice <strong>(1 à 3 ans)</strong></li>
-                <li> Minis pousses <strong>(4 à 3 ans)</strong></li>
+                <li> Minis pousses <strong>(4 à 6 ans)</strong></li>
                 <li> Grands bourgeons <strong>(7 ans et +)</strong></li>
                 <li> Etablissements professionnels <strong>(1 ans et ++)</strong></li>
               </ul>
