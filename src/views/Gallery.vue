@@ -1,6 +1,5 @@
 <template>
-  <div class="container-fluid">
-    <h1>Galerie</h1>
+  <div class="container-fluid galery">    
     <div class="row">
       <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
         <img
@@ -55,4 +54,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.galery{
+  margin-top: 1em;
+}
 </style>

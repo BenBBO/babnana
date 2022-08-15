@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="page-section cta">
+    <section class="page-section section-timetable cta">
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
@@ -73,5 +73,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.section-timetable{
+  background-color: $background;
+}
+
 </style>

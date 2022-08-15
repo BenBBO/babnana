@@ -37,43 +37,63 @@
           <div class="col-xl-9 mx-auto">
             <div class="cta-inner bg-faded text-center rounded">
               <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Our Promise</span>
-                <span class="section-heading-lower">To You</span>
+                <span class="section-heading-upper">venez découvrir</span>
+                <span class="section-heading-lower">Nos animaux</span>
               </h2>
               <p class="mb-0">
-                When you walk into our shop to start your day, we are dedicated
-                to providing you with friendly service, a welcoming atmosphere,
-                and above all else, excellent products made with the highest
-                quality ingredients. If you are not satisfied, please let us
-                know and we will do whatever we can to make things right!
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/pJJ0aJrzqk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section>   
+    <section class="page-section cta section-avenir">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner bg-faded text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">a ne pas rater</span>
+                <span class="section-heading-lower">Ce mois-ci</span>
+              </h2>
+              <p class="mb-0">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded"
+                      :src="require(`@/assets/programme.jpg`)" alt="..." />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
   </div>
 </template>
 
 <script>
 export default {
-  name:"Home"
-
+  name: "Home",
 };
 </script>
 
 <style lang="scss" scoped>
-  .animation-list{
-    list-style-type: none;    
+#appBody {
+  .animation-list {
+    list-style-type: none;
   }
 
-  .section-about{
-    background-color: $light;
+  .section-about,
+  .section-avenir {
+    background-color: $background;
   }
 
-  .section-video{
+  .section-avenir {
+    .cta-inner {
+      background-color: inherit;
+    }
+  }
+
+  .section-video {
     background-color: $third;
   }
-
-
+}
 </style>

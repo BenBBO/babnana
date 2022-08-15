@@ -192,7 +192,7 @@ export default {
 
 body#appBody {
   font-family: "Tajawal", sans-serif;
-  background-color: $primary;
+  background-color: $background;
 
   #mainNav {
     background-color: $primary;
@@ -200,12 +200,12 @@ body#appBody {
     #navbarSupportedContent {
       .nav-link {
         padding: 1em;
-        &.router-link-exact-active {
-          color: black;
+        color: black;
+        &.router-link-exact-active, &:hover{                    
           background-color: $secondary;
           border-radius: 1em;
           transition: border-radius 1s;
-        }
+        }             
       }
 
       .social-nav {

@@ -36,10 +36,12 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <h1>Les animaux</h1>
-    <section class="page-section">
+    </section>      
+    <section class="page-section section-animaux">
+      <h2 class="section-heading mb-4 text-center">
+      <span class="section-heading-upper">venez découvrir</span>
+      <span class="section-heading-lower">Nos animaux</span>
+    </h2>
       <ul class="cards">
         <li>
           <a href="" class="card">
@@ -198,9 +200,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$surface-color: #fff;
-$curve: 40;
+$surface-color: $background;
 
+.section-animaux{
+  background-color: $third;
+}
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -214,7 +218,7 @@ $curve: 40;
   position: relative;
   display: block;
   height: 100%;
-  border-radius: calc($curve * 1px);
+  border-radius: calc(40 * 1px);
   overflow: hidden;
   text-decoration: none;
   border: none;
@@ -231,7 +235,7 @@ $curve: 40;
   left: 0;
   right: 0;
   z-index: 1;
-  border-radius: calc($curve * 1px);
+  border-radius: calc(40 * 1px);
   background-color: $surface-color;
   transform: translateY(100%);
   transition: 0.2s ease-in-out;
@@ -247,7 +251,7 @@ $curve: 40;
   align-items: center;
   gap: 2em;
   padding: 2em;
-  border-radius: calc($curve * 1px) 0 0 0;
+  border-radius: calc(40 * 1px) 0 0 0;
   background-color: $surface-color;
   transform: translateY(-100%);
   transition: 0.2s ease-in-out;
@@ -281,7 +285,7 @@ $curve: 40;
 .card__title {
   font-size: 1em;
   margin: 0 0 0.3em;
-  color: #6a515e;
+  color: black;
 }
 
 .card__tagline {
@@ -289,18 +293,18 @@ $curve: 40;
   margin: 1em 0;
   font-family: "MockFlowFont";
   font-size: 0.8em;
-  color: #d7bdca;
+  color: black;
 }
 
 .card__status {
   font-size: 0.8em;
-  color: #d7bdca;
+  color: black;
 }
 
 .card__description {
   padding: 0 2em 2em;
   margin: 0;
-  color: #d7bdca;
+  color: black;
   font-family: "MockFlowFont";
   display: -webkit-box;
   -webkit-box-orient: vertical;
